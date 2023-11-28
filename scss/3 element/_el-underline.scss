@@ -1,0 +1,11 @@
+.el-underline {
+  text-decoration-color: rgba(153, 229, 165, 1);
+  text-decoration-line: underline;
+  text-decoration-thickness: 10px;
+  text-underline-offset: -3px;
+  text-decoration-skip-ink: none;
+}
+
+.el-underline.el-underline__small {
+  text-decoration-thickness: 4px;
+}

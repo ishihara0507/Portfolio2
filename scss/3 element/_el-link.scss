@@ -1,0 +1,21 @@
+.el-link {
+  font-size: 1.6rem;
+  font-weight: bold;
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: .75rem 0 .75rem .8rem;
+    border-color: transparent transparent transparent rgba(68, 68, 68, 1);
+    transform: translateY(10%);
+    margin-left: .752rem;
+  }
+}
+
+.el-link {
+  &:hover,:focus {
+    opacity: 0.5;
+  }
+}

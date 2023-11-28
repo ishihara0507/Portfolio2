@@ -1,0 +1,137 @@
+.ly-header_inner { //bl-headerでやったほうがよかった。。。
+  display: flex;
+  justify-content: space-between;
+  max-width: 118rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  .el-logo {
+    margin: 2.9rem 0 2.8rem;
+  }
+  .ly-header_right {
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      margin: 3.3rem 0 0.7rem;
+    }
+    .el-tel {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .ly-header_inner {
+    align-items: center;
+    .el-logo {
+      width: 21.5rem;
+    }
+  }
+}
+@media (max-width: 599px) {
+  .ly-header_inner {
+    flex-direction: column;
+    text-align: center;
+    .el-logo {
+      margin: 2.9rem 0 0;
+    }
+    .ly-header_right {
+      p {
+        margin: 1.5rem 0 0.5rem;
+      }
+      .el-tel {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
+.ly-cont {
+  max-width: 118rem;
+  margin: 0 auto;
+}
+
+.ly-footer_inner { //bl-footerでやってもよかったね
+  display: flex;
+  max-width: 118rem;
+  padding: 19.6rem 0 16.3rem;
+  margin: 0 auto;
+  .ly-footer_right {
+    flex-grow: 1;
+    margin-left: 3.4rem;
+    .el-logo {
+      margin-bottom: 2.5rem;
+    }
+    .hp-df {
+      margin-bottom: 2.5rem;
+    }
+    .el-tel {
+      margin-bottom: 2.85rem;
+    }
+    .bl-table {
+      margin-bottom: 2.15rem;
+    }
+  }
+}
+@media (max-width: 1239px) {
+  .ly-footer_inner {
+      .el-googleMap {
+      iframe {
+        width: 50rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1239px) {
+  .ly-header_inner {
+    max-width: 98rem;
+  }
+  .ly-cont {
+    max-width: 98rem;
+  }
+  .ly-footer_inner {
+    max-width: 98rem;
+  }
+}
+
+@media (max-width: 1023px) { //タブレット用
+  .ly-header_inner {
+    max-width: 98rem;
+  }
+  .ly-cont {
+    width: 92%;
+  }
+  .ly-footer_inner {
+    width: 93%;
+    flex-direction: column-reverse;
+    padding: 10rem 0 10rem;
+    .el-googleMap {
+      text-align: center;
+      iframe {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 16/9; //アスペクト比（縦横比）を指定
+      }
+    }
+    .ly-footer_right {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .ly-footer_inner {
+    .ly-footer_right {
+      text-align: center;
+      margin-left: 0;
+      .el-logo {
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .hp-df {
+        margin-bottom: 1.8rem;
+        justify-content: center;
+      }
+    }
+  }
+}

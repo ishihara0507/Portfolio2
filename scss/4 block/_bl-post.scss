@@ -1,0 +1,42 @@
+.bl-post {
+  display: flex;
+  align-items: center;
+  padding: 1.95rem 0;
+  border-bottom: 2px solid rgba(231, 231, 231, 1);
+  .bl-post_date {
+    font-size: 1.6rem;
+    color: rgba(33, 169, 55, 1);
+    margin-right: 3rem;
+  }
+  .el-label {
+    margin-right: 3rem;
+  }
+  .bl-post_txt {
+    flex: 1;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1023px) {
+  .bl-post {
+    display: block;
+    .bl-post_txt {
+      padding-top: 2rem;
+    }
+    .bl-post_date {
+      margin-right: 2rem;
+    }
+    .el-label {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .bl-post {
+    .bl-post_date {
+      margin-right: 1rem;
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+.bl-postsList {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 3rem;
+  padding: 0 6.6rem 4.6rem;
+  text-align: end;
+  .bl-postsList_inner {
+    text-align: start;
+    padding: 3.95rem 0;
+  }
+}
+
+@media (max-width: 820px) {
+  .bl-postsList {
+    padding: 0 5% 4.6rem;
+  }
+}

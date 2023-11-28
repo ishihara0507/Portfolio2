@@ -1,0 +1,27 @@
+.bl-card {
+  display: flex;
+  flex-direction: column;
+  height: 59.1rem;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(201, 201, 201, 1);
+  border-radius: 10px;
+  .bl-card_ttl {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.8rem;
+    padding: 4rem 0 4.5rem;
+    text-align: center;
+  }
+  .bl-card_txt {
+    font-weight: bold;
+    line-height: 3.8rem;
+  }
+  .bl-card_imgWrapper {
+    width: 18.7rem;
+    height: auto;
+    margin: auto auto 0;
+    img {
+      width: 100%;
+    }
+  }
+}

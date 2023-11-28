@@ -1,0 +1,22 @@
+.el-tel {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  color: rgba(33, 169, 55, 1);
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 2.436rem;
+    height: 2.457rem;
+    transform: translateY(20%);
+    background-image: url(source/phone.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 599px) { //携帯以外では電話が掛けられないようにする
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
